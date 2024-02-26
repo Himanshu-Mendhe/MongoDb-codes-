@@ -22,16 +22,13 @@ app.listen (3006, async() => {
    //const tweets = await Tweet.findByIdAndDelete('65db4388a76548af3b9e7b23')
 
    /*
-   const tweetRepo = new TweetRepository;
    const tweets = await tweetRepo.update('65db42a1ef4df9bac3cfeb72', {content: "update 3"});
    console.log(tweets)
    */
-
+   /*
    const tweetRepo = new TweetRepository;
-   const tweets = await tweetRepo.create({content: 'post 2'});
-   console.log(tweets);
-   tweets.comments.push({content: "1st comment"});
-   await tweets.save();
-   console.log(tweets) 
-
+   const tweets = await tweetRepo.getAll(0,3);
+   console.log(tweets[0].contentWithEmail)
+   console.log(tweets[0].id)
+   */ 
 });
