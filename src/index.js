@@ -31,4 +31,7 @@ app.listen (3006, async() => {
    console.log(tweets[0].contentWithEmail)
    console.log(tweets[0].id)
    */ 
+   const tweetRepo = new TweetRepository;
+   console.log(await tweetRepo.create ({content: "with hooks 1"}))
+   
 });
